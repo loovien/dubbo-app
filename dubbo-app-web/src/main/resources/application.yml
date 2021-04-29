@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: dubbo-web
+dubbo:
+  registry:
+    # address: zookeeper://127.0.0.1:2181
+    address: nacos://127.0.0.1:8848/?username=nacos&password=nacos
+  protocol:
+    name: dubbo
+server:
+  port: 8081
