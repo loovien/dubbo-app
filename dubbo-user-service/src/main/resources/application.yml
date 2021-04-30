@@ -1,25 +1,9 @@
 spring:
   application:
     name: dubbo-user-service
+  profiles:
+    active: dev
+
 nacos:
   username: nacos
   password: nacos
-
-dubbo:
-  scan:
-    base-packages: com.example.dubbo.service
-
-  protocol:
-    name: dubbo
-    port: 8888
-
-  registry:
-    # address: zookeeper://127.0.0.1:2181
-    # address: zookeeper://192.168.163.184:2181
-    timeout: 5000
-    address: nacos://192.168.163.228:8848/?username=${nacos.username}&password=${nacos.password}
-
-    # address: nacos://192.168.163.228:8848
-    # config-center:
-    # timeout: 5000
-debug: true

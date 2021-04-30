@@ -17,8 +17,9 @@
     <modules>
         <module>dubbo-api</module>
         <module>dubbo-user-service</module>
+        <module>dubbo-message-service</module>
         <module>dubbo-app-web</module>
-        <module>dubbo-core</module>
+        <module>dubbo-commons</module>
     </modules>
 
     <properties>
@@ -34,7 +35,10 @@
         <curator.version>5.0.0</curator.version>
         <validation.version>2.0.1.Final</validation.version>
         <commons.version>3.11</commons.version>
-        <nacos-client.version>1.4.1</nacos-client.version>
+        <nacos-client.version>2.0.1</nacos-client.version>
+        <jwt.version>0.11.2</jwt.version>
+        <mybatis.version>3.4.2</mybatis.version>
+        <mysql.version>5.1.46</mysql.version>
     </properties>
 
     <dependencyManagement>
@@ -82,7 +86,7 @@
                 <version>${dubbo.version}</version>
             </dependency>
 
-            <dependency>
+            <!-- <dependency>
                 <groupId>org.apache.curator</groupId>
                 <artifactId>curator-framework</artifactId>
                 <version>${curator.version}</version>
@@ -97,7 +101,7 @@
                 <groupId>org.apache.zookeeper</groupId>
                 <artifactId>zookeeper</artifactId>
                 <version>${zookeeper.version}</version>
-            </dependency>
+            </dependency> -->
 
 
             <!--            <dependency>-->
@@ -123,7 +127,29 @@
                 <version>${dubbo-registy.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-api</artifactId>
+                <version>${jwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-impl</artifactId>
+                <version>${jwt.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-jackson</artifactId> <!-- or jjwt-gson if Gson is preferred -->
+                <version>${jwt.version}</version>
+                <scope>runtime</scope>
+            </dependency>
 
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

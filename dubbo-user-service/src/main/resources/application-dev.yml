@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: dubbo-user-service
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.163.200:30006/dubbo-app?useSSL=false&characterEncoding=utf8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+nacos:
+  username: nacos
+  password: nacos
+
+dubbo:
+  scan:
+    base-packages: com.example.dubbo.service
+
+  protocol:
+    name: dubbo
+    port: 8888
+
+  registry:
+    # address: zookeeper://127.0.0.1:2181
+    # address: zookeeper://192.168.163.184:2181
+    timeout: 5000
+    address: nacos://192.168.163.228:8848/?username=${nacos.username}&password=${nacos.password}
+
+    # address: nacos://192.168.163.228:8848
+    # config-center:
+    # timeout: 5000
+mybatis-plus:
+  mapper-locations: classpath:sqlmappers/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    default-fetch-size: 100
+    default-statement-timeout: 30
