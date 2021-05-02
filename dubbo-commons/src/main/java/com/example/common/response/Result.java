@@ -26,6 +26,10 @@ public class Result<T> {
         return new Result<>(code, message, data);
     }
 
+    public static <T> Result<T> wrapErr(Integer code, String message) {
+        return new Result<>(code, message, null);
+    }
+
     public static <T> Result<T> wrapErr(String message) {
         return new Result<>(-1, message, null);
     }
