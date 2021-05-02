@@ -8,4 +8,7 @@ public interface UsersRepository<UsersDO> extends BaseMapper<UsersDO> {
 
     UsersDO fetchUserBy(LoginDTO loginDTO);
 
+
+    UsersDO selectById(Integer id);
+
 }

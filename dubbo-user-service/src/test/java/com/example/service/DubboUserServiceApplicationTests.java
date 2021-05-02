@@ -17,8 +17,18 @@ class DubboUserServiceApplicationTests {
 
     @Test
     void contextLoads() {
+    }
+
+    @Test
+    void userLogin() {
         LoginDTO loginDTO = new LoginDTO().setUsername("luowen").setPassword("admin");
         Object o = usersRepository.fetchUserBy(loginDTO);
+        System.out.println(o);
+    }
+
+    @Test
+    void getUserBy() {
+        Object o = usersRepository.selectById(1);
         System.out.println(o);
     }
 
