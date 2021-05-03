@@ -9,7 +9,6 @@
     </parent>
     <groupId>com.example.dubbo</groupId>
     <artifactId>dubbo-app-web</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <name>dubbo-app-web</name>
     <description>web application</description>
     <properties>
@@ -33,7 +32,7 @@
         <dependency>
             <groupId>org.example</groupId>
             <artifactId>dubbo-api</artifactId>
-            <version>${dubbo-api-version}</version>
+            <version>${project.version}</version>
         </dependency>
 
         <dependency>
