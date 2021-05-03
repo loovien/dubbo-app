@@ -12,7 +12,7 @@
         LIMIT 1;
     </select>
 
-    <select id="selectById" resultType="com.example.common.model.UsersDO">
+    <select id="selectByIdxxxx" resultType="com.example.common.model.UsersDO">
         SELECT *
         FROM users
         WHERE id = #{id}

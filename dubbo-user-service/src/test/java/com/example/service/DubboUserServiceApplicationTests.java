@@ -1,5 +1,6 @@
 package com.example.service;
 
+import com.example.common.model.UsersDO;
 import com.example.common.request.user.LoginDTO;
 import com.example.dao.UsersRepository;
 import org.apache.ibatis.annotations.Param;
@@ -8,12 +9,13 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.List;
+
 @SpringBootTest
-@MapperScan("com.example.dao")
 class DubboUserServiceApplicationTests {
 
     @Autowired
-    UsersRepository usersRepository;
+    UsersRepository<UsersDO> usersRepository;
 
     @Test
     void contextLoads() {
@@ -28,8 +30,8 @@ class DubboUserServiceApplicationTests {
 
     @Test
     void getUserBy() {
-        Object o = usersRepository.selectById(1);
-        System.out.println(o);
+        List<UsersDO> usersDOS = usersRepository.selectList(null);
+        System.out.println(usersDOS);
     }
 
 }
