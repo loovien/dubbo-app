@@ -4,8 +4,8 @@ spring:
 dubbo:
   registry:
     # address: zookeeper://127.0.0.1:2181
-    address: nacos://dev.k8s/?username=nacos&password=nacos
-    # address: nacos://192.168.163.184:8848/?username=nacos&password=nacos
+    # address: nacos://dev.k8s:80/?username=nacos&password=nacos
+    address: nacos://192.168.163.184:8848/?username=nacos&password=nacos
   protocol:
     name: dubbo
 server:

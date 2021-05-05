@@ -155,6 +155,11 @@
                 <artifactId>mybatis-plus-annotation</artifactId>
                 <version>${mybatis.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-extension</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

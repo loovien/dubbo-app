@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.example.dao")
+// @MapperScan("com.example.dao")
 // @EnableAutoConfiguration
 public class DubboUserServiceApplication {
 
