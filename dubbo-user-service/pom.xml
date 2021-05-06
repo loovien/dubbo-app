@@ -12,7 +12,9 @@
     <name>dubbo-user-service</name>
     <description>dubbo user service</description>
     <properties>
-        <java.version>1.8</java.version>
+        <project.buid.sourceEncoding>UTF-8</project.buid.sourceEncoding>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
     </properties>
     <dependencies>
         <dependency>
@@ -92,6 +94,10 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <classifier>exec</classifier>
+                </configuration>
+
             </plugin>
         </plugins>
     </build>

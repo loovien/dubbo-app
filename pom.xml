@@ -24,6 +24,7 @@
 
     <properties>
         <revision>1.0-SNAPSHOT</revision>
+        <project.buid.sourceEncoding>utf-8</project.buid.sourceEncoding>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <spring-boot.version>2.3.0.RELEASE</spring-boot.version>
@@ -163,17 +164,21 @@
         </dependencies>
     </dependencyManagement>
 
+    <scm>
+        <developerConnection>scm:git:git@github.com:loovien/dubbo-app.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
     <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-maven-plugin</artifactId>
-                    <configuration>
-                        <classifier>execute</classifier>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
+                <configuration>
+                    <classifier>repackage</classifier>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 </project>
