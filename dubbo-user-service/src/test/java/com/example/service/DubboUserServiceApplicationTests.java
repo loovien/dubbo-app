@@ -15,7 +15,7 @@ import java.util.List;
 class DubboUserServiceApplicationTests {
 
     @Autowired
-    UsersRepository<UsersDO> usersRepository;
+    UsersRepository usersRepository;
 
     @Test
     void contextLoads() {

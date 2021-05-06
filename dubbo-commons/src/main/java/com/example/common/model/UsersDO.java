@@ -13,6 +13,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Accessors(chain = true)
+@TableName(value = "users")
 public class UsersDO {
 
     @TableId
@@ -24,6 +25,6 @@ public class UsersDO {
 
     private Date createdDate;
 
-    private Date updatedData;
+    private Date updatedDate;
 
 }

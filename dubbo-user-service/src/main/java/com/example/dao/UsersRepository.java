@@ -1,15 +1,14 @@
 package com.example.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.example.common.model.UsersDO;
 import com.example.common.request.user.LoginDTO;
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
 
 @Mapper
-public interface UsersRepository<UsersDO> extends BaseMapper<UsersDO> {
+public interface UsersRepository extends BaseMapper<UsersDO> {
 
     UsersDO fetchUserBy(LoginDTO loginDTO);
-
 
     // UsersDO selectById(Integer id);
 

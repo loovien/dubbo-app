@@ -1,6 +1,12 @@
 spring:
   application:
     name: dubbo-web
+  jackson:
+    property-naming-strategy: LOWER_CAMEL_CASE
+    default-property-inclusion: non_null
+    serialization:
+      FAIL_ON_UNWRAPPED_TYPE_IDENTIFIERS: false
+
 dubbo:
   registry:
     # address: zookeeper://127.0.0.1:2181
@@ -10,3 +16,4 @@ dubbo:
     name: dubbo
 server:
   port: 8081
+

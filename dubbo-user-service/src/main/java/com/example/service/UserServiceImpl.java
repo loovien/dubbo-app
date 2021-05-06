@@ -13,9 +13,9 @@ import org.apache.dubbo.config.annotation.DubboService;
  */
 @DubboService(version = "1.0.0")
 public class UserServiceImpl implements UserService {
-    private final UsersRepository<UsersDO> usersRepository;
+    private final UsersRepository usersRepository;
 
-    public UserServiceImpl(UsersRepository<UsersDO> usersRepository) {
+    public UserServiceImpl(UsersRepository usersRepository) {
         this.usersRepository = usersRepository;
     }
 

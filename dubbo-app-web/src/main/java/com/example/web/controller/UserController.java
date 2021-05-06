@@ -1,10 +1,12 @@
 package com.example.web.controller;
 
 import com.example.api.user.UserService;
+import com.example.common.annotation.LoginRequired;
 import com.example.common.request.user.LoginDTO;
 import com.example.common.response.Result;
 import com.example.common.response.user.UserDTO;
 import com.example.web.service.remote.RpcUserService;
+import com.example.web.util.UIDUtil;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -22,14 +24,15 @@ public class UserController {
         this.rpcUserService = rpcUserService;
     }
 
-    @GetMapping()
-    public Result<UserDTO> getUserById(@RequestParam(name = "id", defaultValue = "1") Integer id) {
+    @GetMapping("/{id}")
+    public Result<UserDTO> getUserById(@PathVariable(name = "id") Integer id) {
         UserDTO userBy = rpcUserService.getUserBy(id);
         if (userBy == null) {
             return Result.wrapErr(-1, "用户记录不存在");
         }
         return Result.wrapOK(userBy);
     }
+
 
     @PostMapping("/login")
     public Result<?> userLogin(@RequestBody LoginDTO loginDTO) {
@@ -38,5 +41,16 @@ public class UserController {
             return Result.wrapErr(-1, "账号或密码错误");
         }
         return Result.wrapOK(userDTO);
+    }
+
+    @LoginRequired
+    @GetMapping("/detail")
+    public Result<?> userinfo() {
+        Integer uid = UIDUtil.getId();
+        UserDTO userBy = rpcUserService.getUserBy(uid);
+        if (userBy == null) {
+            return Result.wrapErr(-1, "用户记录不存在");
+        }
+        return Result.wrapOK(userBy);
     }
 }
