@@ -4,7 +4,7 @@ spring:
   datasource:
     username: root
     password: 123456
-    url: jdbc:mysql://mysql:30006/dubbo-app?useSSL=false&characterEncoding=utf8
+    url: jdbc:mysql://mysql:3306/dubbo-app?useSSL=false&characterEncoding=utf8
     driver-class-name: com.mysql.cj.jdbc.Driver
 dubbo:
   scan:
