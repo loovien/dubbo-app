@@ -7,10 +7,6 @@ spring:
     url: jdbc:mysql://192.168.163.200:30006/dubbo-app?useSSL=false&characterEncoding=utf8
     driver-class-name: com.mysql.cj.jdbc.Driver
 
-nacos:
-  username: nacos
-  password: nacos
-
 dubbo:
   scan:
     base-packages: com.example.service

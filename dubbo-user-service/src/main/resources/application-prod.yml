@@ -6,11 +6,6 @@ spring:
     password: 123456
     url: jdbc:mysql://mysql:30006/dubbo-app?useSSL=false&characterEncoding=utf8
     driver-class-name: com.mysql.cj.jdbc.Driver
-
-nacos:
-  username: nacos
-  password: nacos
-
 dubbo:
   scan:
     base-packages: com.example.service
@@ -35,3 +30,6 @@ mybatis-plus:
     map-underscore-to-camel-case: true
     default-fetch-size: 100
     default-statement-timeout: 30
+
+server:
+  port: 80
