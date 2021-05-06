@@ -2,7 +2,7 @@ spring:
   application:
     name: dubbo-user-service
   profiles:
-    active: dev
+    active: prod
 
 nacos:
   username: nacos
