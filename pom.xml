@@ -11,7 +11,7 @@
     <groupId>org.example</groupId>
     <artifactId>dubbo-app</artifactId>
     <packaging>pom</packaging>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <modules>
         <module>dubbo-api</module>
         <module>dubbo-user-service</module>
@@ -164,7 +164,7 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:loovien/dubbo-app.git</developerConnection>
-        <tag>dubbo-app-1.0</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <build>
