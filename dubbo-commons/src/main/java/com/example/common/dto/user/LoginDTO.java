@@ -1,4 +1,4 @@
-package com.example.common.request.user;
+package com.example.common.dto.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

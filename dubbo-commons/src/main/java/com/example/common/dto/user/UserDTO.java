@@ -1,4 +1,4 @@
-package com.example.common.response.user;
+package com.example.common.dto.user;
 
 import lombok.Data;
 import lombok.experimental.Accessors;

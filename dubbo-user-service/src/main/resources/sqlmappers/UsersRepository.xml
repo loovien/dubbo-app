@@ -3,7 +3,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.dao.UsersRepository">
     <select id="fetchUserBy" resultType="com.example.common.model.UsersDO"
-            parameterType="com.example.common.request.user.LoginDTO">
+            parameterType="com.example.common.dto.user.LoginDTO">
         SELECT id, username, password FROM users
         <where>
             <if test="#{username} != null">

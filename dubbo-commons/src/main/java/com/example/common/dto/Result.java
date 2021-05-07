@@ -1,4 +1,4 @@
-package com.example.common.response;
+package com.example.common.dto;
 
 import lombok.Data;
 import lombok.experimental.Accessors;

@@ -2,8 +2,8 @@ package com.example.service;
 
 import com.example.api.user.AuthService;
 import com.example.common.model.UsersDO;
-import com.example.common.request.user.LoginDTO;
-import com.example.common.response.user.UserDTO;
+import com.example.common.dto.user.LoginDTO;
+import com.example.common.dto.user.UserDTO;
 import com.example.common.util.JwtUtils;
 import com.example.dao.UsersRepository;
 import lombok.extern.slf4j.Slf4j;

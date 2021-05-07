@@ -1,7 +1,7 @@
 package com.example.api.user;
 
 
-import com.example.common.response.user.UserDTO;
+import com.example.common.dto.user.UserDTO;
 
 /**
  * created 4/21/2021 5:29 PM

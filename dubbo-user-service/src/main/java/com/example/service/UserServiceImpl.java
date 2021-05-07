@@ -2,7 +2,7 @@ package com.example.service;
 
 import com.example.api.user.UserService;
 import com.example.common.model.UsersDO;
-import com.example.common.response.user.UserDTO;
+import com.example.common.dto.user.UserDTO;
 import com.example.dao.UsersRepository;
 import org.apache.dubbo.config.annotation.DubboService;
 

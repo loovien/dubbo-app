@@ -1,11 +1,9 @@
 package com.example.service;
 
 import com.example.common.model.UsersDO;
-import com.example.common.request.user.LoginDTO;
+import com.example.common.dto.user.LoginDTO;
 import com.example.dao.UsersRepository;
-import org.apache.ibatis.annotations.Param;
 import org.junit.jupiter.api.Test;
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 

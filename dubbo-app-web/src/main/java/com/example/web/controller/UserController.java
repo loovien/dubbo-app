@@ -1,10 +1,9 @@
 package com.example.web.controller;
 
-import com.example.api.user.UserService;
 import com.example.common.annotation.LoginRequired;
-import com.example.common.request.user.LoginDTO;
-import com.example.common.response.Result;
-import com.example.common.response.user.UserDTO;
+import com.example.common.dto.user.LoginDTO;
+import com.example.common.dto.Result;
+import com.example.common.dto.user.UserDTO;
 import com.example.web.service.remote.RpcUserService;
 import com.example.web.util.UIDUtil;
 import org.springframework.web.bind.annotation.*;

@@ -1,7 +1,7 @@
 package com.example.web.controller;
 
 import com.example.common.exception.BaseException;
-import com.example.common.response.Result;
+import com.example.common.dto.Result;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

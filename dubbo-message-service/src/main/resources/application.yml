@@ -1,1 +1,24 @@
+spring:
+  application:
+    name: dubbo-message-service
+  profiles:
+    active: dev
 
+  jackson:
+    default-property-inclusion: non_null
+    serialization:
+      FAIL_ON_UNWRAPPED_TYPE_IDENTIFIERS: false
+      FAIL_ON_EMPTY_BEANS: false
+mybatis-plus:
+  configuration:
+    auto-mapping-unknown-column-behavior: warning
+    map-underscore-to-camel-case: true
+    default-fetch-size: 100
+    default-statement-timeout: 30
+
+dubbo:
+  scan:
+    base-packages: com.example.service
+  protocol:
+    name: dubbo
+    port: 8888

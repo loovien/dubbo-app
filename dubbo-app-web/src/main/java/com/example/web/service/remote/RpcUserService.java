@@ -2,11 +2,9 @@ package com.example.web.service.remote;
 
 import com.example.api.user.AuthService;
 import com.example.api.user.UserService;
-import com.example.common.model.UsersDO;
-import com.example.common.request.user.LoginDTO;
-import com.example.common.response.user.UserDTO;
+import com.example.common.dto.user.LoginDTO;
+import com.example.common.dto.user.UserDTO;
 import org.apache.dubbo.config.annotation.DubboReference;
-import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.stereotype.Service;
 
 @Service
