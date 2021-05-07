@@ -6,7 +6,7 @@ import com.example.api.message.MessageService;
 import com.example.common.dto.PageResp;
 import com.example.common.dto.message.MsgDTO;
 import com.example.common.model.MessagesDO;
-import com.example.constant.RedisKey;
+import com.example.common.constant.RedisKey;
 import com.example.dao.MessageRepository;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

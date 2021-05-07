@@ -1,9 +1,8 @@
 package com.example.service;
 
-import com.example.constant.RedisKey;
+import com.example.common.constant.RedisKey;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;

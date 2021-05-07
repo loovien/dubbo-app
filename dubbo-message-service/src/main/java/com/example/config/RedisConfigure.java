@@ -1,8 +1,7 @@
 package com.example.config;
 
-import com.example.constant.RedisKey;
+import com.example.common.constant.RedisKey;
 import com.example.service.RedisMsgListenerService;
-import com.fasterxml.jackson.databind.ser.std.StringSerializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
