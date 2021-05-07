@@ -8,5 +8,5 @@ spring:
       FAIL_ON_UNWRAPPED_TYPE_IDENTIFIERS: false
 
   profiles:
-    active: prod
+    active: dev
 

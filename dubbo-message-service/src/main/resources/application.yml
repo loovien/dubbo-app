@@ -4,17 +4,13 @@ spring:
   profiles:
     active: dev
 
-  jackson:
-    default-property-inclusion: non_null
-    serialization:
-      FAIL_ON_UNWRAPPED_TYPE_IDENTIFIERS: false
-      FAIL_ON_EMPTY_BEANS: false
 mybatis-plus:
   configuration:
     auto-mapping-unknown-column-behavior: warning
     map-underscore-to-camel-case: true
     default-fetch-size: 100
     default-statement-timeout: 30
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 dubbo:
   scan:
