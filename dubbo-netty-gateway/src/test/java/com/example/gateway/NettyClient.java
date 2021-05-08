@@ -46,7 +46,8 @@ public class NettyClient {
                                     @Override
                                     protected void channelRead0(ChannelHandlerContext channelHandlerContext, BizDTO bizDTO) throws Exception {
                                         System.out.println("+===================================================+");
-                                        System.out.println(bizDTO);
+                                        System.out.println(bizDTO.getCommand());
+                                        System.out.println(new String(bizDTO.getBody()));
                                         System.out.println("+===================================================+");
                                     }
                                 });

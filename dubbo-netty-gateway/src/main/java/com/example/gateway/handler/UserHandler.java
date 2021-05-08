@@ -36,6 +36,7 @@ public class UserHandler implements Handler {
             if (connDTO.getToken().equals("abc123")) {
                 log.info("add socket to channel: {} with token: {}", context.channel().remoteAddress(), connDTO.getToken());
                 initializr.getChannels().add(context.channel());
+                initializr.getSockets().put("1", context.channel());
             }
             // Integer uid = JwtUtils.getId(connDTO.getToken());
             // initializr.getChannels().add(context.channel());
