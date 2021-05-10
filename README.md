@@ -8,6 +8,7 @@
 4. dubbo-message-service (provider) 消息服务处理。
 5. dubbo-netty-gateway (standalone)  tcp网关接入。
 6. dubbo-user-service (provider) 用户服务，实现用户信息， 用户登录(可以考虑再拆一个服务)业务。
+7. dubbo-websocket (consumer) websocket 网关服务。
 
 ## 大致逻辑
 
@@ -32,7 +33,7 @@
 
 ```
 
-3. 用户连上后， 也可以使用自定义消息体，通过 socket 发送。
+3. 用户连上后（tcp/websocket）， 接收消息。 也可以使用自定义消息体，通过 socket 发送。
 
 ```
 4字节： 包长
@@ -49,7 +50,7 @@ byte[]: 消息体 // json 序列化数据， MsgDTO
 
 ## TOOD
 
-1. websocket 实现。
+1. <del>websocket 实现。</del>
 2. 用户信息补全。
 3. 登录下线。
 4. ....

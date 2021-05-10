@@ -13,6 +13,7 @@
     <description>web application</description>
     <properties>
         <java.version>1.8</java.version>
+        <project.buid.sourceEncoding>utf-8</project.buid.sourceEncoding>
     </properties>
     <dependencies>
         <dependency>
