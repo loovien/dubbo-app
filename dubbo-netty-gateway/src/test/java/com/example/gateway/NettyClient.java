@@ -52,7 +52,8 @@ public class NettyClient {
                                     }
                                 });
                     }
-                }).connect("127.0.0.1", 8088).sync();
+                }).option(ChannelOption.SO_KEEPALIVE, true)
+                .connect("127.0.0.1", 8088).sync();
         sync.channel().closeFuture().sync();
         eventExecutors.shutdownGracefully();
 
