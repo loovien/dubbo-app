@@ -1,4 +1,4 @@
-package com.example.gateway.config;
+package com.example.websocket.config;
 
 import com.example.common.constant.RedisKey;
 import org.springframework.context.annotation.Bean;

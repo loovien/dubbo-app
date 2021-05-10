@@ -1,0 +1,4 @@
+spring:
+  redis:
+    host: 192.168.163.200
+    port: 30001

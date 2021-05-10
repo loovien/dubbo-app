@@ -19,6 +19,8 @@
         <module>dubbo-message-service</module>
         <module>dubbo-app-web</module>
         <module>dubbo-commons</module>
+        <module>dubbo-websocket</module>
+        <module>dubbo-netty-gateway</module>
     </modules>
 
     <properties>
